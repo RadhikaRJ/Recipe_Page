@@ -24,7 +24,7 @@ body {
 
 
 .material-icons {
-    font-size: 36px;
+    font-size: 24px;
 
 }
 
@@ -37,10 +37,31 @@ body {
 }
 
 aside {
-    padding: 1.5em;
+    float:right;
+    margin-top:5%;
+    padding: 1em;
     border: 2px solid brown;
+    border-radius:1em;
+    width: fit-content;
 }
+aside > div{
+    padding:0.5em;
+    /* border: 2px solid blue; */
+}
+aside > div > p{
+    padding-left:0.5em;
+    font-size:10px;
+    color:gray;
+    padding-right:0.5em;
 
+}
+aside > div > p > span{
+  color: black;
+  font-size: 14px;;
+}
+.time-icon{
+color: black;
+}
 footer {
     color: magenta;
     text-align: center;
