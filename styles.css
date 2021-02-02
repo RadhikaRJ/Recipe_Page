@@ -16,34 +16,39 @@ body {
 .header-info>p {
     /* border: 2px solid blue; */
     padding: 0.5em;
-   
+
 }
-.header-description{
-width:68%;
-font-style: italic;
+
+.header-description {
+    width: 68%;
+    font-style: italic;
 }
 
 .main-image {
     width: 100%;
 }
 
-.ingredients-section{
-    width:60%;
-    
+.ingredients-section {
+    width: 60%;
+
 }
-h3{
+
+h3 {
     font-style: italic;
     font-weight: normal;
 }
-.ingredients-section >div{
-    display:flex;
-    padding:0.5em;
+
+.ingredients-section>div {
+    display: flex;
+    padding: 0.5em;
 }
+
 .input-checkbox,
-.additional-items{
-    margin-right:1em;
+.additional-items {
+    margin-right: 1em;
 }
-.items{
+
+.items {
     font-style: italic;
 }
 
@@ -61,70 +66,135 @@ h3{
 }
 
 aside {
-    float:right;
-    margin-top:5%;
+    float: right;
+    margin-top: 5%;
     padding: 1em;
-    border: 2px solid brown;
-    border-radius:1em;
+    /* border: 2px solid brown; */
+    border-radius: 1em;
     width: fit-content;
 }
-aside > div{
-    padding:0.5em;
+
+aside>div {
+    padding: 0.5em;
     /* border: 2px solid blue; */
 }
-aside > div > p{
-    padding-left:0.5em;
-    font-size:10px;
-    color:gray;
-    padding-right:0.5em;
 
-}
-aside > div > p > span{
-  color: black;
-  font-size: 14px;;
-}
-.time-icon{
-color: black;
-}
-
-
-ol{
-   
-    padding:0;
-}
-ol li{
-    counter-increment:numbers;   
-    /* border: 2px solid blue; */
-    display:flex;
-   align-items: flex-start;
-   width:55%;
-}
-
-ol li:before {
-    content: counter(numbers) ;
-    background-color: orange;
-    color:white;
-    padding:0 0.75em;
-    margin: 1.5em;
-    font-size:15px;
-    font-weight:900;
+.other-basic-details {
     /* border: 2px solid green; */
-    height:fit-content;
-    border-radius:0.5em;
-    font-family:"Indie Flower";
+}
+
+.basic-details {
+    padding-left: 0.5em;
+    font-size: 10px;
+    color: gray;
+    padding-right: 0.5em;
+
+}
+.basic-details > p{
+    /* border: 2x solid purple; */
+}
+.basic-details>p>span {
+    color: black;
+    font-size: 14px;
+    /* border: 2px solid orange; */
     
 }
 
-ol{
-    list-style:none;
-    counter-reset:numbers;
+.time-icon {
+    color: black;
 }
-.source{
+
+
+ol {
+
+    padding: 0;
+}
+
+ol li {
+    counter-increment: numbers;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: flex-start;
+    width: 55%;
+}
+
+ol li:before {
+    content: counter(numbers);
+    background-color: orange;
+    color: white;
+    padding: 0 0.75em;
+    margin: 1.5em;
+    font-size: 15px;
+    font-weight: 900;
+    /* border: 2px solid green; */
+    height: fit-content;
+    border-radius: 0.5em;
+    font-family: "Indie Flower";
+
+}
+
+ol {
+    list-style: none;
+    counter-reset: numbers;
+}
+
+.source {
     color: gray;
-    padding:0.5em;
+    padding: 0.5em;
     font-style: italic;
 }
+
 footer {
     color: black;
     text-align: center;
+}
+
+@media (max-width:675px) {
+    .main-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        padding:0.5em;
+    }
+    .header-description{
+        width:100%;
+    }
+    aside {
+        float: none;
+        width: inherit;       
+        padding:0.5em;;
+
+    }
+    aside>div{
+        padding:0;
+        margin-right:0;
+        width:inherit;
+    }
+    .basic-details{
+        padding:0;
+        margin:0;
+        /* border: 2px solid red; */
+        width:inherit;
+    }
+    .other-basic-details {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+        padding: 0;
+    }
+    main{
+        padding:0.5em;
+    }
+    ol li{
+        width:100%;
+    }
+    .ingredients-section {
+        width: 100%;
+    
+    }
+    .source{
+        padding:0.5em;
+        margin-left:4%;
+    }
 }
