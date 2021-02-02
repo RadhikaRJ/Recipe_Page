@@ -14,8 +14,13 @@ body {
 }
 
 .header-info>p {
-    border: 2px solid blue;
-    padding: 0.25em;
+    /* border: 2px solid blue; */
+    padding: 0.5em;
+   
+}
+.header-description{
+width:68%;
+font-style: italic;
 }
 
 .main-image {
@@ -62,7 +67,45 @@ aside > div > p > span{
 .time-icon{
 color: black;
 }
+
+
+ol{
+   
+    padding:0;
+}
+ol li{
+    counter-increment:numbers;   
+    /* border: 2px solid blue; */
+    display:flex;
+   align-items: flex-start;
+   width:55%;
+}
+
+ol li:before {
+    content: counter(numbers) ;
+    background-color: orange;
+    color:white;
+    padding:0 0.75em;
+    margin: 1.5em;
+    font-size:15px;
+    font-weight:900;
+    /* border: 2px solid green; */
+    height:fit-content;
+    border-radius:0.5em;
+    font-family:"Indie Flower";
+    
+}
+
+ol{
+    list-style:none;
+    counter-reset:numbers;
+}
+.source{
+    color: gray;
+    padding:0.5em;
+    font-style: italic;
+}
 footer {
-    color: magenta;
+    color: black;
     text-align: center;
 }
