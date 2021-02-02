@@ -6,7 +6,7 @@ body {
     width: 90%;
     max-width: 1020px;
     margin: 0 auto;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 
 .header-info {
@@ -27,6 +27,25 @@ font-style: italic;
     width: 100%;
 }
 
+.ingredients-section{
+    width:60%;
+    
+}
+h3{
+    font-style: italic;
+    font-weight: normal;
+}
+.ingredients-section >div{
+    display:flex;
+    padding:0.5em;
+}
+.input-checkbox,
+.additional-items{
+    margin-right:1em;
+}
+.items{
+    font-style: italic;
+}
 
 .material-icons {
     font-size: 24px;
